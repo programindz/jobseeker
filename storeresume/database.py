@@ -1,6 +1,7 @@
 from pymongo import MongoClient
+import os
 
-client = MongoClient('mongodb+srv://khansink:q1w2e3r4@songscluster.kertk8u.mongodb.net/?retryWrites=true&w=majority')
+client = MongoClient(f"{os.getenv("MONGODB")}")
 resume_db = client['resumedb']
 resume_collection = resume_db['applicantDetails']
 

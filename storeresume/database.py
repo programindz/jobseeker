@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 import os
 
-client = MongoClient(f"{os.getenv("MONGODB")}")
+client = MongoClient(f"{os.getenv('MONGODB')}")
 resume_db = client['resumedb']
 resume_collection = resume_db['applicantDetails']
 

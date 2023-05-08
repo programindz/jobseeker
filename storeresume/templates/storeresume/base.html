@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JOB SEEKER</title>
+    </head>
+    <body>
+        <nav>
+            <h2>This is a website to store your information for a job application <br>
+                 If want to apply Click The Link Below</h2><br>
+            <a href = "{% url 'signup_with_resume' %}"> APPLY</a>
+        </nav>
+        <main>
+            {% block content %} {% endblock %}
+        </main>
+    </body>
+    
+</html>

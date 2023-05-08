@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JOB SEEKER</title>
+    </head>
+    <body>
+        <nav>
+            <h2>Application for Jobs/Internships <br>
+                </h2><br>
+            <h3>Please fill the form below.</h3>
+        </nav>
+        <main>
+            <h3>Your Details</h3><hr>
+            <form method = "post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type = "submit">Apply Now</button><hr>
+            </form>
+        </main>
+    </body>
+    
+</html>
+
+{% block content %}
+   
+{% endblock %}
